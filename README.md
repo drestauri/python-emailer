@@ -9,11 +9,9 @@ Once that is setup, these examples should work for you after making sure to upda
 Note that when it first authenticates it will need you to accept via the browser and will print out the URL as it attempts to launch your browser. You can copy-paste that link into another browser and authenticate, but the response will not go to the app. So instead, when your browser tries to open something up at "localhost" you can finish the process with a simple ```curl -v "http://<localhost_url>"``` by copy-pasting the URL from the browser into another terminal on the device that is trying to authenticate.
 
 # Notes
-After getting the labels exampel to work, I was unable to get the example draft message code to work in the "Sending Email" examples due to "Precondition check failed" errors.
+After getting the labels example to work, I was unable to get the example draft message code to work in the "Sending Email" examples due to "Precondition check failed" errors.
 To resolve this, I modified the labels example to inclue the changes from the draft example and also looked up an appropriate SCOPES (gmail.compose) and it worked!
-Basically you want to replace the stuff in the "try" statement after:  service = build('gmail', 'v1', credentials=creds) and of course put the proper imports at the top.
-
-Once you update the scope it will ask you authenticate via the browser and create a token for you to access the API without authenticating on subsequent executions.
+Basically to implement any of the examples that fail with the same "Precondition check failed" error, you should be able to start from these or the quickstart example and just replace the stuff in the "try" statement after:  service = build('gmail', 'v1', credentials=creds) and of course put the proper imports at the top to get going!
 
 # References
 https://console.cloud.google.com/apis/credentials/consent?project=piserveremail

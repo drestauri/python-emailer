@@ -4,7 +4,7 @@ Simple python project to interact with Google API and send emails
 # Usage
 First, make sure you can successfully run the python example to get the labels: https://developers.google.com/gmail/api/quickstart/python as that example has the framework and settings for authenticating your app.
 
-Once that is setup, these examples should work for you after making sure to update the "their_email@gmail.com" and "your_email.gmail.com". The authentication piece where you create credentials in "APIs & Services"/Credentials for your project, is where you'll be able to download the OAuth client secrets json which you will store in the same directory as your python code in "credentials.json".
+Once that is setup, these examples should work for you after making sure to update the "their_email@gmail.com" and "your_email@gmail.com". The authentication piece where you create credentials in "APIs & Services"/Credentials for your project, is where you'll be able to download the OAuth client secrets json which you will store in the same directory as your python code in "credentials.json".
 
 Note that when it first authenticates it will need you to accept via the browser and will print out the URL as it attempts to launch your browser. You can copy-paste that link into another browser and authenticate, but the response will not go to the app. So instead, when your browser tries to open something up at "localhost" you can finish the process with a simple ```curl -v "http://<localhost_url>"``` by copy-pasting the URL from the browser into another terminal on the device that is trying to authenticate.
 

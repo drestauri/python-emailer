@@ -16,5 +16,6 @@ To resolve this, I modified the labels example to inclue the changes from the dr
 Basically to implement any of the examples that fail with the same "Precondition check failed" error, you should be able to start from these or the quickstart example and just replace the stuff in the "try" statement after:  service = build('gmail', 'v1', credentials=creds) and of course put the proper imports at the top to get going!
 
 # References
-https://console.cloud.google.com/apis/credentials/consent?project=piserveremail
-
+https://console.cloud.google.com/apis/credentials/
+https://developers.google.com/gmail/api/quickstart/python
+https://developers.google.com/gmail/api/guides/sending
